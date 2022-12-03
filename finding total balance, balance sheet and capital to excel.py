@@ -199,12 +199,10 @@ class UpdateFile:
     
     
     #main function, automation and stuff   
-    def update(self, PATH, ExcelSourcePath, currence_yearly_dollar, currence_of_march_dollar ,currence_of_june_dollar, 
+    def main(self, PATH, ExcelSourcePath, currence_yearly_dollar, currence_of_march_dollar ,currence_of_june_dollar, 
                      currence_of_september_dollar, currence_yearly_euro, currence_of_march_euro ,currence_of_june_euro , currence_of_september_euro): 
-         #PATH = 'D:\גיבוי כושל וואן דרייב\Desktop\chromedriver.exe'
+
          driver = webdriver.Chrome(PATH)
-         
-         #ExcelSourcePath = r"D:\\גיבוי כושל וואן דרייב\\Desktop\\תגמול שכר בכירים לשנת 2020+נתונים כספיים אוטומציה.xlsx"
          book = openpyxl.load_workbook(ExcelSourcePath)
          sheet = book["ביצועי חברות"]
          
